@@ -1,1 +1,1 @@
-<?php include '/templates/layout/header.html';
+<?php include 'templates/layout/header.html';
