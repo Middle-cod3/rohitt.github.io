@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Nunito";
+  src: url(/static/assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(/static/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/static/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+:root {
+  /* --main-color: #2f5596; */
+  --main-color: #243c82;
+  --sec-color: #f2f2f2;
+  --pure-white-color: #ffffff;
+}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1em;
+  color: #999;
+}
+section.grey__backfill{
+  background-color: #efefef;
+  margin: 5px 0;
+}
+
+
+.main__slider div img{
+ max-height:  400px;
+}
+
+/* 2nd carousel design */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 122px;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
+  transition: transform 1s,visibility 1s ease-in;
+}
+.swiper-button-next,.swiper-button-prev{
+  box-shadow: none !important;
+  background: none !important;
+}
+.swiper-button-next{
+  right: -2.5rem !important;
+}
+.swiper-button-prev{
+  left: -2.5rem !important;
+}
+
+#main__content section.top__selling .top__selling__header button{
+  border-bottom: 3px solid var(--bg-yellow);
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+
+         
+.add__cart__btn {
+  background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%);
+ 
+  padding: 2px 30px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 5px;
+  display: block;
+  font-family: "Raleway";
+}
+
+.add__cart__btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
